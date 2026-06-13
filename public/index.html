@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Search History Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <header class="app-header">
+        <div class="logo">
+            <span class="icon">☁️</span>
+            <h1>Weather Search History Tracker</h1>
+        </div>
+        <button id="themeToggle" class="btn-icon">☀️</button>
+    </header>
+
+    <div class="container">
+        
+        <aside class="sidebar">
+            <div class="sidebar-top">
+                <h2>Search History</h2>
+                <button id="clearHistoryBtn" class="btn-clear">Clear</button>
+            </div>
+            <ul id="historyList" class="history-list">
+                </ul>
+        </aside>
+
+        <main class="main-area">
+            
+            <div id="messageBox" class="message-box hidden"></div>
+
+            <form id="searchForm" class="search-form">
+                <input type="text" id="searchInput" placeholder="e.g., Vijayawada..." autocomplete="off">
+                <button type="submit" id="searchBtn" class="btn-primary">Search</button>
+            </form>
+
+            <div id="chipsContainer" class="chips-container">
+                </div>
+
+            <div id="loader" class="loader hidden"></div>
+
+            <div id="weatherCard" class="weather-card hidden">
+                <div class="card-header">
+                    <div>
+                        <h2 id="cityName">--</h2>
+                        <p id="countryName">--</p>
+                    </div>
+                    <div id="weatherIcon" class="weather-icon">☁️</div>
+                </div>
+                
+                <div class="card-body">
+                    <h1 class="temperature"><span id="temp">--</span>°C</h1>
+                    <p id="condition" class="condition">--</p>
+                </div>
+
+                <div class="card-grid">
+                    <div class="grid-item">
+                        <span>Feels Like</span>
+                        <strong id="feelsLike">--°C</strong>
+                    </div>
+                    <div class="grid-item">
+                        <span>Humidity</span>
+                        <strong id="humidity">--%</strong>
+                    </div>
+                    <div class="grid-item">
+                        <span>Wind Speed</span>
+                        <strong id="wind">-- km/h</strong>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    Last Updated: <span id="lastUpdated">--</span>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
