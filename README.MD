@@ -20,8 +20,10 @@
 Ensure your local MongoDB instance is running on port `27017`. The app will automatically connect to `mongodb://127.0.0.1:27017/weather_history_tracker` and create the database for you.
 
 ## 💻 Run Instructions
-- Start the server: 
-```bash
-  npm start
-​Access the app in your browser at: http://localhost:3000
-​👨‍💻 Created by Vamsi Raju Oleti
+- Start the server: `npm start`
+- Access the app in your browser at: `http://localhost:3000`
+
+---
+
+👨‍💻 **Created by Vamsi Raju Oleti**
+
